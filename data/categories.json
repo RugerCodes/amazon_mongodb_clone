@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "cat_2852",
+        "name": "Record",
+        "popular": true,
+        "active": true
+    },
+    {
+        "_id": "cat_8160",
+        "name": "Everything",
+        "popular": false,
+        "active": true
+    },
+    {
+        "_id": "cat_2442",
+        "name": "Radio",
+        "popular": true,
+        "active": true
+    },
+    {
+        "_id": "cat_9244",
+        "name": "Newspaper",
+        "popular": true,
+        "active": true
+    },
+    {
+        "_id": "cat_1347",
+        "name": "Spring",
+        "popular": false,
+        "active": true
+    },
+    {
+        "_id": "cat_9043",
+        "name": "Picture",
+        "popular": false,
+        "active": true
+    },
+    {
+        "_id": "cat_1876",
+        "name": "Head",
+        "popular": false,
+        "active": true
+    },
+    {
+        "_id": "cat_3000",
+        "name": "Value",
+        "popular": false,
+        "active": true
+    },
+    {
+        "_id": "cat_2657",
+        "name": "Before",
+        "popular": false,
+        "active": true
+    },
+    {
+        "_id": "cat_5970",
+        "name": "Me",
+        "popular": false,
+        "active": true
+    }
+]

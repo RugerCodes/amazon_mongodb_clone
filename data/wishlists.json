@@ -1,0 +1,162 @@
+[
+    {
+        "_id": "wish_6520",
+        "user_id": "user_2269",
+        "product_id": "prod_1533",
+        "added_at": "2024-12-17T21:44:37",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_8215",
+        "user_id": "user_2269",
+        "product_id": "prod_5077",
+        "added_at": "2025-04-22T03:23:03",
+        "priority": "high",
+        "pinned": true
+    },
+    {
+        "_id": "wish_1523",
+        "user_id": "user_2931",
+        "product_id": "prod_8908",
+        "added_at": "2024-10-12T17:55:51",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_6097",
+        "user_id": "user_9033",
+        "product_id": "prod_5848",
+        "added_at": "2024-07-09T12:50:35",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_4297",
+        "user_id": "user_2510",
+        "product_id": "prod_7080",
+        "added_at": "2024-06-15T07:35:21",
+        "priority": "high",
+        "pinned": true
+    },
+    {
+        "_id": "wish_4382",
+        "user_id": "user_8168",
+        "product_id": "prod_8417",
+        "added_at": "2024-06-03T12:11:09",
+        "priority": "low",
+        "pinned": false
+    },
+    {
+        "_id": "wish_4462",
+        "user_id": "user_1001",
+        "product_id": "prod_6648",
+        "added_at": "2024-11-02T23:43:43",
+        "priority": "medium",
+        "pinned": false
+    },
+    {
+        "_id": "wish_3529",
+        "user_id": "user_8168",
+        "product_id": "prod_8825",
+        "added_at": "2024-09-27T08:34:39",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_6573",
+        "user_id": "user_7402",
+        "product_id": "prod_5887",
+        "added_at": "2024-09-21T02:08:48",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_1444",
+        "user_id": "user_7094",
+        "product_id": "prod_1041",
+        "added_at": "2024-10-20T00:54:26",
+        "priority": "low",
+        "pinned": false
+    },
+    {
+        "_id": "wish_2812",
+        "user_id": "user_6301",
+        "product_id": "prod_3755",
+        "added_at": "2024-08-01T15:22:16",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_5869",
+        "user_id": "user_7426",
+        "product_id": "prod_9049",
+        "added_at": "2024-06-29T21:04:13",
+        "priority": "medium",
+        "pinned": false
+    },
+    {
+        "_id": "wish_7079",
+        "user_id": "user_3457",
+        "product_id": "prod_5887",
+        "added_at": "2025-05-16T17:29:09",
+        "priority": "high",
+        "pinned": false
+    },
+    {
+        "_id": "wish_7106",
+        "user_id": "user_6301",
+        "product_id": "prod_3440",
+        "added_at": "2024-11-07T03:03:12",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_4526",
+        "user_id": "user_7550",
+        "product_id": "prod_2769",
+        "added_at": "2025-01-03T14:51:06",
+        "priority": "medium",
+        "pinned": false
+    },
+    {
+        "_id": "wish_7652",
+        "user_id": "user_6301",
+        "product_id": "prod_7175",
+        "added_at": "2024-12-20T14:51:04",
+        "priority": "high",
+        "pinned": false
+    },
+    {
+        "_id": "wish_7390",
+        "user_id": "user_1943",
+        "product_id": "prod_7543",
+        "added_at": "2024-08-08T07:50:02",
+        "priority": "low",
+        "pinned": true
+    },
+    {
+        "_id": "wish_2969",
+        "user_id": "user_7426",
+        "product_id": "prod_7543",
+        "added_at": "2024-09-16T00:57:58",
+        "priority": "low",
+        "pinned": false
+    },
+    {
+        "_id": "wish_9202",
+        "user_id": "user_9996",
+        "product_id": "prod_5848",
+        "added_at": "2024-10-01T21:37:16",
+        "priority": "low",
+        "pinned": false
+    },
+    {
+        "_id": "wish_4125",
+        "user_id": "user_4370",
+        "product_id": "prod_8758",
+        "added_at": "2025-04-02T09:31:36",
+        "priority": "high",
+        "pinned": true
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "coupon_2576",
+        "code": "QXvb99",
+        "discount": 20,
+        "type": "fixed",
+        "minimum_order_amount": 20,
+        "expiry_date": "2026-03-01",
+        "stackable": false
+    },
+    {
+        "_id": "coupon_1734",
+        "code": "ebqh10",
+        "discount": 9,
+        "type": "fixed",
+        "minimum_order_amount": 52,
+        "expiry_date": "2026-01-16",
+        "stackable": true
+    },
+    {
+        "_id": "coupon_7271",
+        "code": "jhqS03",
+        "discount": 5,
+        "type": "fixed",
+        "minimum_order_amount": 42,
+        "expiry_date": "2025-08-28",
+        "stackable": true
+    },
+    {
+        "_id": "coupon_3389",
+        "code": "yZVb64",
+        "discount": 10,
+        "type": "fixed",
+        "minimum_order_amount": 45,
+        "expiry_date": "2025-10-22",
+        "stackable": false
+    },
+    {
+        "_id": "coupon_6744",
+        "code": "DPkE69",
+        "discount": 25,
+        "type": "percentage",
+        "minimum_order_amount": 28,
+        "expiry_date": "2025-10-27",
+        "stackable": true
+    },
+    {
+        "_id": "coupon_7469",
+        "code": "xJnF18",
+        "discount": 10,
+        "type": "percentage",
+        "minimum_order_amount": 36,
+        "expiry_date": "2026-01-17",
+        "stackable": true
+    },
+    {
+        "_id": "coupon_4253",
+        "code": "SaUe95",
+        "discount": 27,
+        "type": "fixed",
+        "minimum_order_amount": 86,
+        "expiry_date": "2025-07-10",
+        "stackable": false
+    },
+    {
+        "_id": "coupon_9438",
+        "code": "PfWK23",
+        "discount": 12,
+        "type": "percentage",
+        "minimum_order_amount": 64,
+        "expiry_date": "2026-01-26",
+        "stackable": true
+    },
+    {
+        "_id": "coupon_9922",
+        "code": "kjoe89",
+        "discount": 9,
+        "type": "fixed",
+        "minimum_order_amount": 77,
+        "expiry_date": "2025-10-31",
+        "stackable": true
+    },
+    {
+        "_id": "coupon_7653",
+        "code": "pmkY51",
+        "discount": 9,
+        "type": "fixed",
+        "minimum_order_amount": 90,
+        "expiry_date": "2026-02-14",
+        "stackable": false
+    }
+]
