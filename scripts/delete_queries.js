@@ -1,50 +1,47 @@
 // === USERS ===
-db.users.deleteOne({ "address.city": "Queens" });
-db.users.deleteOne({ "phone": "+1-800-555-0000" });
+db.users.deleteOne({ "name": "Jeffrey Coleman" });
+db.users.deleteOne({ "name": "Ronald Butler" });
+db.users.deleteOne({ "name": "Robert Burnett" });
+db.users.deleteOne({ "name": "Aaron Coleman" });
+db.users.deleteOne({ "name": "Shannon Martinez" });
+db.users.deleteOne({ "name": "Cynthia Thomas" });
+db.users.deleteOne({ "name": "Michael Rhodes" });
+db.users.deleteOne({ "name": "Jennifer Taylor" });
+db.users.deleteOne({ "name": "Joshua Smith" });
+db.users.deleteOne({ "name": "Linda Sharp" });
+db.users.deleteMany({ "address.city": "East Miguelville" });
+db.users.deleteMany({ "address.city": "North Ronaldton" });
+db.users.deleteMany({ "address.city": "Jasonview" });
+db.users.deleteMany({ "address.city": "East Luismouth" });
+db.users.deleteMany({ "address.city": "Thompsonborough" });
 // === PRODUCTS ===
-db.products.deleteOne({ "on_sale": false });
-db.products.deleteOne({ "price": { $lt: 15 } });
+db.products.deleteOne({ "name": "Create" });
+db.products.deleteOne({ "name": "Ability" });
+db.products.deleteOne({ "name": "Wrong" });
+db.products.deleteOne({ "name": "Myself" });
+db.products.deleteOne({ "name": "Decide" });
+db.products.deleteOne({ "name": "Cup" });
+db.products.deleteOne({ "name": "Four" });
+db.products.deleteOne({ "name": "Discuss" });
+db.products.deleteOne({ "name": "Else" });
+db.products.deleteOne({ "name": "End" });
 // === ORDERS ===
-db.orders.deleteOne({ "status": "Cancelled" });
-db.orders.deleteOne({ "total": { $lt: 10 } });
+db.orders.deleteMany({ "status": "Cancelled" });
+db.orders.deleteMany({ "status": "Delivered" });
+db.orders.deleteMany({ "status": "Shipped" });
+db.orders.deleteMany({ "status": "Pending" });
+db.orders.deleteOne({ "shipping_address.state": "NE" });
+db.orders.deleteOne({ "shipping_address.state": "TN" });
+db.orders.deleteOne({ "shipping_address.state": "SC" });
+db.orders.deleteOne({ "shipping_address.state": "LA" });
+db.orders.deleteOne({ "shipping_address.state": "VA" });
 // === REVIEWS ===
-db.reviews.deleteOne({ "rating": 1 });
-db.reviews.deleteOne({ "title": { $regex: /poor/i } });
-// === WISHLISTS ===
-db.wishlists.deleteOne({ "priority": "low" });
-db.wishlists.deleteOne({ "pinned": false });
-// === COUPONS ===
-db.coupons.deleteOne({ "discount": { $lt: 5 } });
-db.coupons.deleteOne({ "stackable": false });
-// === CATEGORIES ===
-db.categories.deleteOne({ "active": false });
-db.categories.deleteOne({ "popular": false });
-db.orders.deleteOne({ "total": { $lt: 11 } });
-db.orders.deleteOne({ "total": { $lt: 23 } });
-db.orders.deleteOne({ "total": { $lt: 37 } });
-db.orders.deleteOne({ "total": { $lt: 21 } });
-db.orders.deleteOne({ "total": { $lt: 7 } });
-db.orders.deleteOne({ "total": { $lt: 17 } });
-db.orders.deleteOne({ "total": { $lt: 49 } });
-db.orders.deleteOne({ "total": { $lt: 12 } });
-db.orders.deleteOne({ "total": { $lt: 22 } });
-db.orders.deleteOne({ "total": { $lt: 48 } });
-db.orders.deleteOne({ "total": { $lt: 29 } });
-db.orders.deleteOne({ "total": { $lt: 25 } });
-db.orders.deleteOne({ "total": { $lt: 24 } });
-db.orders.deleteOne({ "total": { $lt: 11 } });
-db.orders.deleteOne({ "total": { $lt: 30 } });
-db.orders.deleteOne({ "total": { $lt: 37 } });
-db.orders.deleteOne({ "total": { $lt: 47 } });
-db.orders.deleteOne({ "total": { $lt: 15 } });
-db.orders.deleteOne({ "total": { $lt: 31 } });
-db.orders.deleteOne({ "total": { $lt: 8 } });
-db.orders.deleteOne({ "total": { $lt: 22 } });
-db.orders.deleteOne({ "total": { $lt: 25 } });
-db.orders.deleteOne({ "total": { $lt: 25 } });
-db.orders.deleteOne({ "total": { $lt: 22 } });
-db.orders.deleteOne({ "total": { $lt: 32 } });
-db.orders.deleteOne({ "total": { $lt: 11 } });
-db.orders.deleteOne({ "total": { $lt: 35 } });
-db.orders.deleteOne({ "total": { $lt: 36 } });
-db.orders.deleteOne({ "total": { $lt: 20 } });
+db.reviews.deleteOne({ "title": "Strong officer." });
+db.reviews.deleteOne({ "title": "Each themselves cup." });
+db.reviews.deleteOne({ "title": "Conference director." });
+db.reviews.deleteOne({ "title": "Agree drug capital." });
+db.reviews.deleteOne({ "title": "Learn." });
+// === WISHLIST ===
+db.wishlists.deleteMany({ "priority": "high" });
+db.wishlists.deleteMany({ "priority": "low" });
+db.wishlists.deleteMany({ "priority": "medium" });

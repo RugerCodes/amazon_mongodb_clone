@@ -1,42 +1,55 @@
 // === USERS ===
-db.users.find({ "name": { $regex: /^J/i } });
-db.users.find({ "email": { $regex: /@gmail\.com$/ } });
-db.users.find({ "address.city": "Brooklyn" });
-db.users.find({ "address.state": { $in: ["NY", "CA"] } });
-db.users.find({ "created_at": { $exists: true } });
-// === PRODUCTS ===
-db.products.find({ "price": { $lt: 50 } });
-db.products.find({ "stock": { $gt: 25 } });
-db.products.find({ "on_sale": true });
-db.products.find({ "description": { $regex: /wireless/i } });
-db.products.find({ "category_id": { $exists: true } });
-// === ORDERS ===
+db.users.find({ "name": "Jeffrey Coleman" });
+db.users.find({ "name": "Ronald Butler" });
+db.users.find({ "name": "Robert Burnett" });
+db.users.find({ "name": "Aaron Coleman" });
+db.users.find({ "name": "Shannon Martinez" });
+db.users.find({ "name": "Cynthia Thomas" });
+db.users.find({ "name": "Michael Rhodes" });
+db.users.find({ "name": "Jennifer Taylor" });
+db.users.find({ "name": "Joshua Smith" });
+db.users.find({ "name": "Linda Sharp" });
+db.users.find({ "address.state": "KS" });
+db.users.find({ "address.state": "MA" });
+db.users.find({ "address.state": "MN" });
+db.users.find({ "address.state": "NE" });
+db.users.find({ "address.state": "SC" });
+// === PRODUCTS===
+db.products.find({ "name": "Four" });
+db.products.find({ "name": "Suffer" });
+db.products.find({ "name": "Out" });
+db.products.find({ "name": "Create" });
+db.products.find({ "name": "Else" });
+db.products.find({ "name": "Security" });
+db.products.find({ "name": "Accept" });
+db.products.find({ "name": "Cup" });
+db.products.find({ "name": "Fund" });
+db.products.find({ "name": "Fly" });
+// === ORDERS===
+db.orders.find({ "status": "Cancelled" });
 db.orders.find({ "status": "Delivered" });
-db.orders.find({ "total": { $gte: 100 } });
-db.orders.find({ "items.product_id": { $exists: true } });
-db.orders.find({ "shipping_address.state": "CA" });
-db.orders.find({ "created_at": { $gte: "2023-01-01" } });
-// === REVIEWS ===
-db.reviews.find({ "rating": 5 });
-db.reviews.find({ "title": { $regex: /great/i } });
-db.reviews.find({ "comment": { $regex: /fast shipping/i } });
-db.reviews.find({ "product_id": { $exists: true } });
-db.reviews.find({ "user_id": { $exists: true } });
-// === WISHLISTS ===
-db.wishlists.find({ "priority": "high" });
-db.wishlists.find({ "pinned": true });
-db.wishlists.find({ "added_at": { $exists: true } });
-db.wishlists.find({ "product_id": { $exists: true } });
-db.wishlists.find({ "user_id": { $exists: true } });
+db.orders.find({ "status": "Shipped" });
+db.orders.find({ "status": "Pending" });
+db.orders.find({ "shipping_address.city": "Thompsonbury" });
+db.orders.find({ "shipping_address.city": "West Yvonneville" });
+db.orders.find({ "shipping_address.city": "Mariamouth" });
+db.orders.find({ "shipping_address.city": "Howardstad" });
+db.orders.find({ "shipping_address.city": "Vegatown" });
 // === COUPONS ===
-db.coupons.find({ "discount": { $gt: 10 } });
-db.coupons.find({ "type": "percentage" });
-db.coupons.find({ "stackable": true });
-db.coupons.find({ "expiry_date": { $exists: true } });
-db.coupons.find({ "minimum_order_amount": { $lte: 100 } });
-// === CATEGORIES ===
-db.categories.find({ "popular": true });
-db.categories.find({ "active": true });
-db.categories.find({ "name": { $regex: /^E/i } });
-db.categories.find({ "_id": { $exists: true } });
-db.categories.find({ "popular": { $in: [true, false] } });
+db.coupons.find({ "code": "ebqh10" });
+db.coupons.find({ "code": "yZVb64" });
+db.coupons.find({ "code": "pmkY51" });
+db.coupons.find({ "code": "kjoe89" });
+db.coupons.find({ "code": "jhqS03" });
+// === CATERGORIES===
+db.categories.find({ "name": "Before" });
+db.categories.find({ "name": "Value" });
+db.categories.find({ "name": "Picture" });
+db.categories.find({ "name": "Newspaper" });
+db.categories.find({ "name": "Spring" });
+db.categories.find({ "name": "Head" });
+db.categories.find({ "name": "Me" });
+db.categories.find({ "name": "Everything" });
+db.categories.find({ "name": "Radio" });
+db.categories.find({ "name": "Record" });
+db.reviews.find({ "title": "Strong officer." });

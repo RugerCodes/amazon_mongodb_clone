@@ -1,50 +1,49 @@
 // === USERS ===
-db.users.updateOne({ "address.state": "NY" }, { $set: { "phone": "+1-212-555-1234" } });
-db.users.updateOne({ "email": { $regex: /@yahoo\.com$/ } }, { $set: { "address.city": "Bronx" } });
+db.users.updateOne({ "name": "Jeffrey Coleman" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Ronald Butler" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Robert Burnett" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Aaron Coleman" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Shannon Martinez" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Cynthia Thomas" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Michael Rhodes" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Jennifer Taylor" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Joshua Smith" }, { $set: { "active": true } });
+db.users.updateOne({ "name": "Linda Sharp" }, { $set: { "active": true } });
+db.users.updateMany({ "address.state": "KS" }, { $set: { "zone": "northeast" } });
+db.users.updateMany({ "address.state": "MA" }, { $set: { "zone": "northeast" } });
+db.users.updateMany({ "address.state": "MN" }, { $set: { "zone": "northeast" } });
+db.users.updateMany({ "address.state": "NE" }, { $set: { "zone": "northeast" } });
+db.users.updateMany({ "address.state": "SC" }, { $set: { "zone": "northeast" } });
 // === PRODUCTS ===
-db.products.updateOne({ "stock": 0 }, { $set: { "on_sale": true } });
-db.products.updateOne({ "price": { $gt: 100 } }, { $inc: { "price": -10 } });
+db.products.updateOne({ "name": "Create" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Ability" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Wrong" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Myself" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Decide" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Cup" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Four" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Discuss" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "Else" }, { $set: { "featured": true } });
+db.products.updateOne({ "name": "End" }, { $set: { "featured": true } });
 // === ORDERS ===
-db.orders.updateOne({ "status": "Pending" }, { $set: { "status": "Processing" } });
-db.orders.updateOne({ "total": { $lt: 30 } }, { $set: { "shipping_address.city": "UpdatedCity" } });
-// === REVIEWS ===
-db.reviews.updateOne({ "rating": 3 }, { $set: { "rating": 4 } });
-db.reviews.updateOne({ "title": { $regex: /bad/i } }, { $set: { "flagged": true } });
-// === WISHLISTS ===
-db.wishlists.updateOne({ "priority": "low" }, { $set: { "priority": "medium" } });
-db.wishlists.updateOne({ "pinned": false }, { $set: { "pinned": true } });
+db.orders.updateMany({ "status": "Cancelled" }, { $set: { "priority": "standard" } });
+db.orders.updateMany({ "status": "Delivered" }, { $set: { "priority": "standard" } });
+db.orders.updateMany({ "status": "Shipped" }, { $set: { "priority": "standard" } });
+db.orders.updateMany({ "status": "Pending" }, { $set: { "priority": "standard" } });
+db.orders.updateOne({ "shipping_address.city": "Thompsonbury" }, { $set: { "delivered": true } });
+db.orders.updateOne({ "shipping_address.city": "West Yvonneville" }, { $set: { "delivered": true } });
+db.orders.updateOne({ "shipping_address.city": "Mariamouth" }, { $set: { "delivered": true } });
+db.orders.updateOne({ "shipping_address.city": "Howardstad" }, { $set: { "delivered": true } });
+db.orders.updateOne({ "shipping_address.city": "Vegatown" }, { $set: { "delivered": true } });
+// === REVIEWS===
+db.reviews.updateOne({ "title": "Strong officer." }, { $set: { "flagged": false } });
+db.reviews.updateOne({ "title": "Each themselves cup." }, { $set: { "flagged": false } });
+db.reviews.updateOne({ "title": "Conference director." }, { $set: { "flagged": false } });
+db.reviews.updateOne({ "title": "Agree drug capital." }, { $set: { "flagged": false } });
+db.reviews.updateOne({ "title": "Learn." }, { $set: { "flagged": false } });
 // === COUPONS ===
-db.coupons.updateOne({ "type": "fixed" }, { $set: { "type": "percentage" } });
-db.coupons.updateOne({ "discount": { $lt: 20 } }, { $set: { "discount": 25 } });
-// === CATEGORIES ===
-db.categories.updateOne({ "popular": false }, { $set: { "popular": true } });
-db.categories.updateOne({ "active": false }, { $set: { "active": true } });
-db.products.updateOne({ "stock": { $lt: 5 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 6 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 7 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 8 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 9 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 10 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 11 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 12 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 13 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 14 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 5 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 6 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 7 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 8 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 9 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 10 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 11 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 12 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 13 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 14 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 5 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 6 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 7 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 8 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 9 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 10 } }, { $inc: { "stock": 6 } });
-db.products.updateOne({ "stock": { $lt: 11 } }, { $inc: { "stock": 7 } });
-db.products.updateOne({ "stock": { $lt: 12 } }, { $inc: { "stock": 5 } });
-db.products.updateOne({ "stock": { $lt: 13 } }, { $inc: { "stock": 6 } });
+db.coupons.updateMany({ "code": "ebqh10" }, { $set: { "active": true } });
+db.coupons.updateMany({ "code": "yZVb64" }, { $set: { "active": true } });
+db.coupons.updateMany({ "code": "pmkY51" }, { $set: { "active": true } });
+db.coupons.updateMany({ "code": "kjoe89" }, { $set: { "active": true } });
+db.coupons.updateMany({ "code": "jhqS03" }, { $set: { "active": true } });
