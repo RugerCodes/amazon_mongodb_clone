@@ -1,4 +1,3 @@
-
 # 📦 Amazon MongoDB Clone (NoSQL Final Project)
 
 Welcome to the official repository for **Amazon MongoDB Clone**, a NoSQL database project built using MongoDB and modeled after an Amazon-style eCommerce backend. This project was completed as a final deliverable for a university NoSQL course and demonstrates full CRUD (Create, Read, Update, Delete) operations across a realistic set of collections.
@@ -16,7 +15,7 @@ amazon_mongodb_clone/
 │   ├── update_queries.js
 │   ├── delete_queries.js
 │   ├── MongoDB_Master_Queries.js
-├── output/                      # (Optional) logs from mongosh runs
+├── output/
 ├── README.md
 ```
 
@@ -70,11 +69,10 @@ This project contains the following collections within the `amazon` database:
 
 ### 💻 mongosh:
 
-- All scripts tested via command-line using:
+To test all queries and log the output to a file without modifying the original database:
 
 ```bash
-mongosh "your-mongo-uri" < scripts/find_queries.js > output/find_output.txt
-```
+mongosh "mongodb+srv://***************:**********@cluster0.******.mongodb.net/amazon"
 
 ---
 
@@ -82,8 +80,8 @@ mongosh "your-mongo-uri" < scripts/find_queries.js > output/find_output.txt
 
 - ✅ Demonstrated full NoSQL schema design
 - ✅ Inserted 200+ records across 7 collections
-- ✅ Wrote and tested 50 `find`, 50 `update`, 50 `delete` queries
-- ✅ Packaged for GitHub and submission
+- ✅ Wrote and tested 50 `find`, 50 `update`, 50 `delete` queries Using Terminal and MongoDB Compass
+- ✅ Packaged for GitHub
 
 ---
 
@@ -96,3 +94,4 @@ mongosh "your-mongo-uri" < scripts/find_queries.js > output/find_output.txt
 ## 📄 License
 
 For academic purposes only.
+```
